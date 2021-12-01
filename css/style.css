@@ -1,0 +1,916 @@
+/* --------------- Reset CSS --------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------- Global --------------- */
+
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1.8; /* mettre en px??? */
+	margin: 0;
+}
+
+.container
+{
+	overflow-anchor: none;
+}
+
+header
+{
+	margin: 0px 40px;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.title, h2, h3, h4
+{
+	font-weight: bold;
+}
+
+.title, h2
+{
+	font-size: 24px;
+}
+
+h3
+{
+	font-size: 13px;
+	margin: 0px 0px 0px 10px;
+}
+
+main
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 40px;
+}
+
+.bordssec
+{
+	border-radius: 20px 20px 20px 20px;
+	padding: 12px;
+}
+
+img
+{
+	object-fit: cover;
+}
+
+main a:hover, footer a:hover
+{
+	color: #0065FC;
+}
+
+#heber a, #act a
+{
+	display: block;
+}
+
+article
+{
+	box-sizing: content-box;
+}
+
+/* --------------- Header --------------- */
+
+header
+{
+	display: flex;
+}
+
+header:not(.en-cours)
+{
+	flex-direction: column;
+}
+
+#top
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.containlogo
+{
+	padding: 20px 20px 10px 20px;
+}
+
+.logo
+{
+	width: 120px;
+	padding: 6px;
+}
+
+.subtitle
+{
+	margin-top: -6px;
+	margin-bottom: 16px;
+}
+
+
+/* --------------- Recherche --------------- */
+
+#recherche
+{
+	margin-bottom: 24px;
+}
+
+label
+{
+	position:absolute; left:-999px
+}
+
+.fa-map-marker-alt
+{
+	padding: 12px;
+	width: 36px;
+	height: 42px;
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
+	background-color: #F2F2F2;
+}
+
+input
+{
+	display: inline-block;
+	padding: 18px 6px;
+	margin: -5px -4px;
+	height: 16px;
+	border: 3px solid #F2F2F2;
+	border-left: none;
+	border-right: none;
+	font-weight: bold;
+}
+
+.fa-search
+{
+	display: none;
+}
+
+
+button
+{
+	color: white;
+	background-color: #0065FC;
+	display:  inline-block;
+	height: 40px;
+	border: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 90px;
+	cursor: pointer;
+}
+
+/* --------------- Filtres --------------- */
+
+#filtres
+{
+	display: flex;
+	align-items: center;
+}
+
+#filtres ul
+{
+	display: flex;
+}
+
+#filtres .fas 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50% ;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	position: relative;
+	left: -10px;
+}
+
+
+#filtres a
+{
+	display: flex;
+	border: 3px solid #F2F2F2;
+	padding: 0px 8px 0px 8px;
+	border-radius: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0px 0px 0px 16px;
+}
+
+#filtres p
+{
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 3px
+}
+
+.fa-info
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #F2F2F2;
+}
+
+.info
+{
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.info i
+{
+	margin-right: 10px;
+}
+
+#filtres a:hover
+{
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-color: #DEEBFF;
+}
+
+header p .fas
+{
+	color: #0065FC;
+}
+
+/* --------------- Navigation --------------- */
+
+.en-cours
+{
+	display: flex;
+}
+
+.en-cours li
+{
+	margin-right: 20px;
+	padding: 30px 20px 10px 20px;
+	display:  inline-block;
+	border-top: 3px transparent;
+}
+
+.en-cours li:focus, .en-cours li:hover
+{
+	color: #0065FC;
+	box-shadow: 0 3px 0 #0065FC inset;
+}
+
+/* --------------- Section #heber --------------- */
+
+#heber
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	width: 70%;
+}
+
+#heber h2
+{
+	flex-basis:100%;
+	margin: 0px 0px 10px 12px;
+}
+
+#heber article:not(#heber aside article)
+{
+	border: 3px white solid;
+	border-radius: 20px;
+	box-shadow: 3px 3px 16px grey;
+	background-color: white;
+	flex-basis:29%;
+	margin: 10px;
+}
+
+#heber img
+{
+	width: 100%;
+	height: 130px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+
+#heber p, aside p
+{
+	font-size: 13px;
+	margin: 0px 0px auto 10px;
+}
+
+.texth
+{
+	height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside
+{
+	background-color: #F2F2F2;
+	width: 28%;
+	display: flex;
+	flex-direction: column;
+}
+
+aside h2
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 0px 10px 12px;
+}
+
+aside article
+{
+	border: 3px white solid;
+	border-radius: 20px;
+	box-shadow: 3px 3px 16px grey;
+	margin: 10px;
+	background-color: white;
+}
+
+aside img
+{
+	height: 130px;
+	max-width: 40%;
+	min-width: 40%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+aside article a
+{
+	display: flex;
+}
+
+.textp
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.etoiles
+{
+	margin: 0px 0px 0px 10px;
+}
+
+.fa-star:not(.bleu)
+{
+	color: lightgrey;
+}
+
+.bleu
+{
+	color: #0065FC;
+}
+
+.afficher
+{
+	font-weight: bold;
+	margin: 20px 0px 20px 12px;
+}
+
+/* --------------- Section #act --------------- */
+
+#act
+{
+	width: 100%;
+}
+
+.actcont
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.small
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 22.5%;
+}
+
+.pomegues
+{
+	height: 220px;
+	min-width: 100%;
+}
+
+.frioul
+{
+	height: 110px;
+	min-width: 100%;
+}
+
+.small img:not(.frioul, .pomegues)
+{
+	height: 165px;
+	min-width: 100%;
+}
+
+.small article
+{
+	flex-basis: 100%;
+}
+
+.big img
+{
+	height: 400px;
+	max-width: 100%;
+}
+
+#act
+{
+	margin: 40px 0px;
+}
+
+#act h2
+{
+	margin-bottom: 10px;
+}
+
+#act img
+{
+	border-top-left-radius: 20px;
+	border-top-right-radius:  20px;
+}
+
+#act article 
+{
+	border: 3px white solid;
+	border-radius: 20px;
+	box-shadow: 3px 3px 16px grey;
+	background-color: white;
+	border: 0;
+	flex-basis: 22.5%;
+}
+
+/* --------------- Footer --------------- */
+
+footer
+{
+	background-color: #F2F2F2;
+	margin-top: 16px;
+	padding: 20px 0px 32px 0px;
+}
+
+h4
+{
+	font-size: 18px;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+footer nav
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 40px;
+}
+
+footer nav div
+{
+	margin-right: 130px;
+}
+
+footer li
+{
+	margin-top: 4px;
+}
+
+footer a
+{
+	color: black;
+	text-decoration: none;
+}
+
+/* --------------- Tablettes --------------- */
+
+@media screen and (max-width:992px)
+{
+	.container
+	{
+
+	}
+
+	header, main
+	{
+		margin: unset;
+	}
+
+	#top
+	{
+		flex-direction: column;
+	}
+
+	.containlogo
+	{
+		display: flex;
+		justify-content: center;
+		padding: unset;
+	}
+
+	.logo
+	{
+		width: 150px;
+	}
+
+	.en-cours
+	{
+		justify-content: center;
+		Flex-basis: 50%;
+	}
+
+	.en-cours li
+	{
+		margin: 0;
+		border-bottom: 3px solid #F2F2F2;
+		border-top: unset;
+		flex-basis: 50%;
+		text-align: center;
+	}
+
+	.en-cours li:focus, .en-cours li:hover
+	{
+		border-bottom: 3px solid #0065FC;
+		box-shadow: unset;
+	}
+
+	.title
+	{
+		margin: 42px 0px 0px 16px;
+		line-height: 1;
+	}
+
+	.subtitle
+	{
+		margin: 10px 0px 0px 16px;
+	}
+
+	h2, .title 
+	{
+   		font-size: 18px;
+	}
+
+	aside h2, #heber h2, #act h2
+	{
+		margin: 16px;
+	}
+
+	h3
+	{
+		font-size: 12px;
+		line-height: 1.5;
+	}
+
+	aside h3
+	{
+		padding-top: 4px;
+	}
+
+	#heber p, aside p
+	{
+		font-size: 12px;
+	}
+
+	#recherche
+	{
+		margin: 16px 0px 16px 16px;
+	}
+
+	.etoiles
+	{
+		font-size: 12px;
+	}
+
+	#filtres
+	{
+		margin: 0px 16px;
+	}
+
+	.info i
+	{
+		margin-left: 16px;
+	}
+
+	input
+	{
+		padding: 18px 24px;
+	}
+
+	button span
+	{
+		display: none;
+	}
+
+		.fa-search
+	{
+		display: unset;
+	}
+
+	button
+	{
+		width: 42px;
+	}
+
+	.bordssec
+	{
+		border-radius: unset;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		padding: 0px;   /* probablement à changer */
+	}
+
+	#heber
+	{
+		background-color: unset;
+		width: 68%;
+	}
+
+	#heber article:not(#heber aside article)
+	{
+		flex-basis: 28%;
+		margin:  10px 0px 10px 16px;
+	}
+
+	aside
+	{
+		width: 29%;
+	}
+
+	.afficher
+	{
+		margin: 10px 16px;
+	}
+
+	.actcont
+	{
+		margin-right: 16px
+	}
+
+	#act article
+	{
+		flex-basis: 24%;
+	}
+
+	.big img
+	{
+		height: 330px;
+	}
+
+	.small img:not(.pomegues, .frioul)
+	{
+		max-width: 100%;
+		height: 140px;
+	}
+
+	.pomegues
+	{
+		height: 170px;
+	}
+
+	#act article
+	{
+		margin: 0px 0px 20px 16px;
+	}
+
+	footer nav div
+	{
+		margin: 0px 50px 0px 0px;
+	}
+}
+
+/* --------------- Mobile --------------- */
+
+@media screen and (max-width:768px)
+{
+	.logo
+	{
+		width: 150px;
+	}
+
+	button
+	{
+		width: 42px;
+		border-radius: 10px;
+	}
+
+	#filtres
+	{
+		margin: 0px 16px;
+	}
+
+	#recherche
+	{
+		display: flex;
+		justify-content: center;
+		margin-left: 0;
+	}
+
+	input
+	{
+		margin: 0px -4px 0pc -4px;
+		padding: 18px 22px;
+	}
+
+	#filtres
+	{
+		flex-wrap:  wrap;
+	}
+
+	#filtres p
+	{
+		padding: unset;
+	}
+
+	#filtres ul
+	{
+		flex-wrap: wrap;
+		margin-left: -14px;
+	}
+
+	#filtres li
+	{
+		margin: 5px 0px;
+	}
+
+	.info
+	{
+		margin: 16px 16px 16px 0px;
+		align-items: flex-start;
+	}
+
+	.info i
+	{
+		min-width: 30px;
+	}
+
+	.bordssec
+	{
+		border-radius: unset;
+		padding: 0px;
+	}
+
+	aside h2, #heber h2, #act h2
+	{
+		font-size: 24px;
+	}
+
+	h3
+	{
+		font-size: 16px;
+	}
+
+	#heber p, aside p
+	{
+		font-size: 16px;
+	}
+
+	#heber img, aside img, .big img
+	{
+		height: 140px;
+	}
+
+	aside
+	{
+		order: 1;
+	}
+
+	aside img
+	{
+		min-width: 40%;
+	}
+
+	aside article
+	{
+		margin: 0px 16px 20px 16px;
+	}
+
+	#heber
+	{
+		order: 2;
+		margin-top: 40px;
+	}
+
+	#heber, aside, #act
+	{
+		width: 100%;
+	}
+
+	#heber article:not(#heber aside article)
+	{
+		flex-basis: 100%;
+		margin: 0px 16px 20px 16px;
+	}
+
+	#act
+	{
+		order: 3;
+	}
+
+	.afficher
+	{
+		margin: 10px 16px;
+	}
+
+	#act img
+	{
+		min-width: 100%;
+	}
+
+	#act article, .small
+	{
+		flex-basis: 100%;
+	}
+
+	.actcont article
+	{
+		flex-basis: 100%;
+		margin: 0px 16px 20px 16px;
+	}
+
+	.big img
+	{
+		max-width: unset;
+	}
+
+	.small img
+	{
+		height: 140px;
+	}
+
+	footer nav
+	{
+		flex-direction: column;
+	}
+
+	footer nav div
+	{
+		margin: 16px 16px;
+	}
+}
